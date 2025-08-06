@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Moon, Sun, Github, Menu, X, BookOpen } from "lucide-react";
+import { Menu, X, BookOpen } from "lucide-react";
 import { useNavigation } from "@/hooks/use-navigation";
 // import { useTheme } from "@/components/ui/theme-provider";
 
@@ -8,7 +8,7 @@ export function Navigation() {
   // const { theme, setTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { navigateToSection, navigateToPage } = useNavigation();
+  const { navigateToSection } = useNavigation();
 
   useEffect(() => {
     const handleScroll = () => {

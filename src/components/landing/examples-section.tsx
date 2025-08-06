@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Calendar, Clock, Code2, BookOpen } from "lucide-react";
+import { Calendar, Clock, Code2 } from "lucide-react";
 
 export function ExamplesSection() {
   return (

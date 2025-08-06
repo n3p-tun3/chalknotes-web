@@ -1,21 +1,13 @@
 import { Footer } from "@/components/landing/footer";
 import { motion } from "framer-motion";
-import { useNavigation } from "@/hooks/use-navigation";
+
 import { 
   BookOpen, 
-  Zap, 
-  Palette, 
-  Puzzle, 
-  Smartphone, 
-  Zap as Lightning, 
   Code, 
-  Package,
   Terminal,
   Settings,
   FileText,
-  Github,
   ExternalLink,
-  ChevronRight,
   CheckCircle,
   ArrowRight,
   Clock,
@@ -25,38 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const features = [
-  {
-    icon: Zap,
-    title: "Zero Configuration",
-    description: "Intelligent detection of Next.js setup, CSS frameworks, and project structure"
-  },
-  {
-    icon: Palette,
-    title: "Smart Theming",
-    description: "Multiple themes with automatic CSS framework detection (Tailwind, Styled Components, CSS Modules)"
-  },
-  {
-    icon: Puzzle,
-    title: "Plugin Architecture",
-    description: "Extensible plugin system with inline syntax parsing (`@@PluginName`)"
-  },
-  {
-    icon: Smartphone,
-    title: "Responsive Design",
-    description: "Mobile-first approach with dark mode support"
-  },
-  {
-    icon: Lightning,
-    title: "Performance Optimized",
-    description: "Built-in caching, error boundaries, and retry mechanisms"
-  },
-  {
-    icon: Code,
-    title: "TypeScript Support",
-    description: "Full TypeScript integration with comprehensive type definitions"
-  }
-];
+
 
 const quickStartSteps = [
   {
@@ -119,8 +80,6 @@ const themes = [
 ];
 
 export default function Docs() {
-  const { navigateToSection } = useNavigation();
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {

@@ -1,4 +1,4 @@
-import { Github, Twitter, MessageCircle, BookOpen } from "lucide-react";
+import { Twitter, BookOpen } from "lucide-react";
 import { useNavigation } from "@/hooks/use-navigation";
 
 const footerLinks = {
