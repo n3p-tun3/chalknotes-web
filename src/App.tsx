@@ -4,8 +4,7 @@ import { Navigation } from "@/components/landing/navigation";
 import Home from "@/pages/home";
 import Docs from "@/pages/docs";
 import NotFound from "@/pages/not-found";
-
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function Router() {
   return (
