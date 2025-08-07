@@ -1,6 +1,6 @@
 import { Footer } from "@/components/landing/footer";
 import { motion } from "framer-motion";
-import { BookOpen, Code, ArrowRight, Clock, Zap, Database, Settings, Puzzle, Sparkles, Rocket, Users, Star, Github, Globe, Palette, Shield, Layers } from 'lucide-react';
+import { BookOpen, Code, ArrowRight, Clock, Zap, Database, Settings, Puzzle, Sparkles, Rocket, Globe, Palette, Shield, Layers } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -65,36 +65,7 @@ const steps = [
   }
 ];
 
-const testimonials = [
-  {
-    name: "Sarah Chen",
-    role: "Frontend Developer",
-    company: "TechCorp",
-    content: "ChalkNotes transformed how I manage my developer blog. Writing in Notion and having it automatically sync to my Next.js site is incredible.",
-    avatar: "/placeholder.svg?height=40&width=40"
-  },
-  {
-    name: "Marcus Rodriguez",
-    role: "Full Stack Engineer",
-    company: "StartupXYZ",
-    content: "The plugin system is fantastic. I can embed CodePens, tweets, and custom components without touching any code. Perfect for technical content.",
-    avatar: "/placeholder.svg?height=40&width=40"
-  },
-  {
-    name: "Emily Watson",
-    role: "Tech Lead",
-    company: "DevStudio",
-    content: "Setup took literally 3 minutes. The automatic framework detection worked flawlessly with our existing React setup. Highly recommended!",
-    avatar: "/placeholder.svg?height=40&width=40"
-  }
-];
 
-// const stats = [
-//   { number: "10k+", label: "Developers" },
-//   { number: "50k+", label: "Blog Posts" },
-//   { number: "99.9%", label: "Uptime" },
-//   { number: "< 5min", label: "Setup Time" }
-// ];
 
 export default function Landing() {
   const scrollToSection = (sectionId: string) => {
