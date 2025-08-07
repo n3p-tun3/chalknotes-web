@@ -5,6 +5,8 @@ import Home from "@/pages/home";
 import Docs from "@/pages/docs";
 import NotFound from "@/pages/not-found";
 
+import { Analytics } from "@vercel/analytics/next"
+
 function Router() {
   return (
     <>
@@ -22,6 +24,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="chalknotes-ui-theme">
       <Router />
+      <Analytics />
     </ThemeProvider>
   );
 }
